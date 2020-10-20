@@ -1,0 +1,41 @@
+@import url(./font.css);
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+@import url(./partials/_variables.css);
+
+.logo{
+    font-family: 'Piedra';
+    font-size:2.3em;
+    color: rgb(74, 157, 168);
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 13px/2px var(--roboto);
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text ;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:text ;
+}  
