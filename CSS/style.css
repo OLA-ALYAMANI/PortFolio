@@ -1,12 +1,12 @@
-@import url(./font.css);
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
-
+@import url(./font.css);
 @import url(./partials/_variables.css);
+@import url(./partials/_global.css);
 
 .logo{
     font-family: 'Piedra';
     font-size:2.3em;
-    color: rgb(74, 157, 168);
+    color: rgb(74, 157, 168);padding: 0 12.5ex 0 0;
 }
 
 .header_area .main-menu .navbar .navbar-brand{
@@ -38,4 +38,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip:text ;
-}  
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
