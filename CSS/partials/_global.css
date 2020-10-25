@@ -14,7 +14,7 @@
     border-radius: 4px;
 }
 
-.button .primary-button{
+.button.primary-button{
     background: var(--gradient-color);
     background-clip: padding-box;
     color: whitesmoke;
@@ -22,7 +22,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.button .primary-button:hover{
+.button.primary-button:hover{
     background-clip: padding-box;
     background: whitesmoke;
     color: black;
