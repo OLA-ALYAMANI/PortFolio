@@ -10,7 +10,7 @@
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
     position: relative;
-    border: 3px solid transparent;
+    /* border: 1px solid transparent; */
     border-radius: 4px;
 }
 
@@ -26,4 +26,15 @@
     background-clip: padding-box;
     background: whitesmoke;
     color: black;
+}
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
 }
