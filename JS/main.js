@@ -99,3 +99,7 @@ $(document).ready(() => {
   
 //   const darkmode1 = new Darkmode(options);
 //   darkmode1.showWidget();
+
+$(document).ready(function(){
+    $(.project-area).trigger("click")
+})

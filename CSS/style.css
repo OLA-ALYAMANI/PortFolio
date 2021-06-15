@@ -200,3 +200,13 @@ div.tag{
 .site-main > .services-area .services:hover{
   box-shadow: var(--box-shadow);
 }
+
+/*Project*/
+
+.site-main .project-area{
+  padding: 4rem 0;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+  font: normal 700 25px/12px var(--roboto);
+}
