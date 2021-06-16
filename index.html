@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/all.min.css ">
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
@@ -16,8 +17,6 @@
     <!-- START LOADING -->
     <section class="loading_area">
         <div class="loader">
-            <div class="circle"></div>
-            <div class="circle"></div>
         </div>
     </section>
     <!-- END LOADING -->
@@ -62,7 +61,6 @@
                 </nav>
             </div>
         </header>
-
         <!-- END HEADER -->
 
         <!-- START MAIN -->
@@ -121,6 +119,7 @@
                 </div>
             </section>
             <!-- END ABOUT AREA -->
+
             <!-- BRAND AREA -->
             <!-- <section class="brand-area">
             <div class="container-fluid">
@@ -141,6 +140,7 @@
             </div>
         </section> -->
             <!-- END BRAND AREA -->
+
             <!-- START SERVICES AREA -->
             <section class="services-area">
                 <div class="container">
@@ -178,6 +178,7 @@
                 </div>
             </section>
             <!-- END SERVICES AREA -->
+
             <!-- PROJECT AREA -->
             <section class="project-area">
                 <div class="container">
@@ -188,7 +189,9 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                             <div class="our-project">
                                 <div class="img">
-                                    <img src="./img/portfolio/Museum.jpg" alt="Second_Project">
+                                    <a class="test-popup-link" href="./img/portfolio/Museum.jpg">
+                                        <img src="./img/portfolio/Museum.jpg" alt="Second_Project">
+                                    </a>
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">Art Museum</h4>
@@ -198,7 +201,9 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                             <div class="our-project">
                                 <div class="img">
-                                    <img src="./img/portfolio/iForest.jpg" alt="Therd_Project">
+                                    <a class="test-popup-link" href="./img/portfolio/iForest.jpg">
+                                        <img src="./img/portfolio/iForest.jpg" alt="Therd_Project">
+                                    </a>
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">iForest App</h4>
@@ -208,7 +213,9 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                             <div class="our-project">
                                 <div class="img">
-                                    <img src="./img/portfolio/Travel.jpg" alt="Fourth_Project">
+                                    <a class="test-popup-link" href="./img/portfolio/Travel.jpg">
+                                        <img src="./img/portfolio/Travel.jpg" alt="Fourth_Project">
+                                    </a>
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">Travel</h4>
@@ -218,7 +225,9 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
                             <div class="our-project">
                                 <div class="img">
-                                    <img src="./img/portfolio/pokémon.jpg" alt="Traning_Project">
+                                    <a class="test-popup-link" href="./img/portfolio/pokémon.jpg">
+                                        <img src="./img/portfolio/pokémon.jpg" alt="Traning_Project">
+                                    </a>
                                 </div>
                                 <div class="title py-4">
                                     <h4 class="text-uppercase">Pokémon App</h4>
@@ -229,14 +238,59 @@
                 </div>
             </section>
             <!-- END PROJECT AREA -->
+
+            <!-- SUBSCRIBE ME AREA -->
+            <section class="subscribe-us-area">
+                <div class="container subscribe">
+                    <div class="row">
+                        <div class="col-lg-12 text-center subscribe-title">
+                            <h4 class="text-uppercase">Get update From anywhere</h4>
+                        </div>
+                    </div>
+                    <div class="d-sm-flex justify-content-center">
+                        <form class="w-50">
+                            <div class="row d-flex flex-row flex-wrap">
+                                <div class="col input-textbox">
+                                    <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col">
+                                    <div class="btn-submit">
+                                        <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- END SUBSCRIBE ME AREA -->
+
         </main>
         <!-- END MAIN -->
     </section>
+    
+    <footer class="footer-area">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="site-logo text-ceter py-4">
+                    <a href="#"></a><h1>OLA</h1></div>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="./JS/jQuery.js"></script>
     <script src="./JS/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script> -->
-    <script src="./JS/main.js"></script>
     <script src='./JS/jquery.svg3dtagcloud.min.js'></script>
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>

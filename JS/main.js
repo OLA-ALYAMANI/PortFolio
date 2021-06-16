@@ -6,7 +6,7 @@ $(".main_area").hide()
 
 setTimeout(() => {
     $(".loading_area").fadeToggle()
-}, 1500)
+}, 2600)
 
 $(".main_area").show()
 
@@ -101,5 +101,10 @@ $(document).ready(() => {
 //   darkmode1.showWidget();
 
 $(document).ready(function(){
-    $(.project-area).trigger("click")
+    $(".project-area").trigger("click");
+
+    $(".project-area .grid .test-popup-link").magnificPopup({
+        type:'image',
+        gallery:{enabled:true}
+    })
 })
