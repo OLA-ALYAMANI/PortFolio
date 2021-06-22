@@ -92,7 +92,7 @@
             <!-- END BANNER -->
 
             <!-- START ABOUT AREA -->
-            <section class="about-area">
+            <section class="about-area" id="about">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -113,7 +113,11 @@
                                     Crazy Full Stack Developer who wants to exploer every tech stack.
                                 </p>
                             </div>
-                            <button type="button" class="btn button primary-button text-uppercase">Download cv</button>
+                            <a href="./Documents/Ola AlYamani - Computer Sciece - Mecca.pdf"
+                                download="Ola AlYamani Resume">
+                                <button type="button" class="btn button primary-button text-uppercase">Download
+                                    cv</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +146,7 @@
             <!-- END BRAND AREA -->
 
             <!-- START SERVICES AREA -->
-            <section class="services-area">
+            <section class="services-area" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center services-title">
@@ -180,7 +184,7 @@
             <!-- END SERVICES AREA -->
 
             <!-- PROJECT AREA -->
-            <section class="project-area">
+            <section class="project-area" id="projects">
                 <div class="container">
                     <div class="project-title pb-5">
                         <h1 class="text-uppercase title-h1">Recently Done Project</h1>
@@ -240,10 +244,10 @@
             <!-- END PROJECT AREA -->
 
             <!-- SUBSCRIBE ME AREA -->
-            <section class="subscribe-us-area">
+            <section class="subscribe-us-area" id="contact">
                 <div class="container subscribe">
                     <div class="row">
-                        <div class="col-lg-12 text-center subscribe-title">
+                        <!-- <div class="col-lg-12 text-center subscribe-title">
                             <h4 class="text-uppercase">Get update From anywhere</h4>
                         </div>
                     </div>
@@ -259,7 +263,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </form> -->
+                        <div class="col-lg-12 text-center subscribe-title">
+                            <h4 class="text-uppercase">Get update From anywhere</h4>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -268,20 +286,26 @@
         </main>
         <!-- END MAIN -->
     </section>
-    
+
     <footer class="footer-area">
         <div class="container">
             <div class="flex-wrap">
-                <div class="site-logo text-ceter py-4">
-                    <a href="#"></a><h1>OLA</h1></div>
-                </div>
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
+                <div class="site-logo text-center py-2">
                     <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <h1>OLA</h1>
                     </a>
                 </div>
             </div>
+            <div class="social text-center">
+                <h5 class="text-uppercase">Follow me</h5>
+                <a href="https://github.com/OLA-ALYAMANI">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ola-alyamani-6988a0136/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
         </div>
     </footer>
 

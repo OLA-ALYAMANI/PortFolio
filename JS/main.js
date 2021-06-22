@@ -6,7 +6,7 @@ $(".main_area").hide()
 
 setTimeout(() => {
     $(".loading_area").fadeToggle()
-}, 2600)
+}, 2000)
 
 $(".main_area").show()
 
