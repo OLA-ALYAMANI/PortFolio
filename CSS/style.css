@@ -61,7 +61,7 @@
 }
 
 .header_area .main-menu .navbar .navbar-brand {
-  padding: 0 2rem 0 5rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .header_area .main-menu .navbar {
@@ -72,9 +72,16 @@
   display: flex;
   justify-content: flex-end;
 }
+.header_area .main-menu .navbar-nav li{
+  width: 9rem;
+}
+
+/* .header_area .main-menu .navbar-nav .but-2 a{
+  height: 4rem;
+} */
 
 .header_area .main-menu .nav-item .nav-link {
-  font: normal 500 13px/2px var(--roboto);
+  font: normal 500 16px/2px var(--roboto);
   font-family: var(--roboto);
   text-transform: uppercase;
   font-weight: 500;
@@ -88,6 +95,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 
 .header_area .main-menu .navbar-nav a:hover {
   background: var(--gradient-color);
