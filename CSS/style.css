@@ -72,13 +72,10 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .header_area .main-menu .navbar-nav li{
   width: 9rem;
 }
-
-/* .header_area .main-menu .navbar-nav .but-2 a{
-  height: 4rem;
-} */
 
 .header_area .main-menu .nav-item .nav-link {
   font: normal 500 16px/2px var(--roboto);
@@ -177,7 +174,7 @@ div.tag{
 }
 
 .site-main .about-area{
-  padding: 8rem 5rem;
+  padding: 8rem;
 }
 
 .site-main .about-area .about-title h2 > span{
