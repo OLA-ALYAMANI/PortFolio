@@ -42,7 +42,7 @@
 }
 
 p.para{
-    color:var(-text-color);
+    color:var(--text-color);
     font: normal 500 16px/25px var(--roboto);
 }
 
@@ -55,5 +55,5 @@ p.para{
     background: #fff;
     box-shadow: var(--box-shadow);
     z-index: 999;
-    transition: backgound 1s ease;
+    transition: background 1s ease;
 }

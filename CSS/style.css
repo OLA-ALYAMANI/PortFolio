@@ -188,11 +188,11 @@ nav.tag{
   padding: 1.9rem 0;
 }
 
-.site-main .edu_exp-area{
+.site-main .edu-exp-area{
   padding: 2rem 0;
 }
 
-.site-main .edu_exp-area .about-table .tab-item{
+.site-main .edu-exp-area .about-table .tab-item{
   padding: 3px 0;
   background-color: transparent;
   text-transform: capitalize;
@@ -207,11 +207,11 @@ nav.tag{
   transition: all 0.3s ease;
 }
 
-.site-main .edu_exp-area .about-table .tab-item:last-child{
+.site-main .edu-exp-area .about-table .tab-item:last-child{
   margin: 0;
 }
 
-.site-main .edu_exp-area .about-table .tab-item::before{
+.site-main .edu-exp-area .about-table .tab-item::before{
   content: "";
   position: absolute;
   left: 0;
@@ -222,15 +222,58 @@ nav.tag{
   transition: width 0.3s ease;
 }
 
-.site-main .edu_exp-area .about-table .tab-item.active{
+.site-main .edu-exp-area .about-table .tab-item.active{
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.site-main .edu_exp-area .about-table .tab-item:hover:before{
+.site-main .edu-exp-area .about-table .tab-item:hover:before{
   width: 100%;
+}
+
+.site-main .edu-exp-area .timeline{
+  position: relative;
+}
+
+.site-main .edu-exp-area .timeline::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 5px;
+  background-color: var(--third-color);
+}
+
+.site-main .edu-exp-area .tab-content{
+  padding: 40px 0;
+}
+
+.site-main .edu-exp-area .timeline-item .date{
+  display: block;
+  color: var(--third-color);
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.site-main .edu-exp-area .timeline-item .city{
+  display: block;
+  font-weight: 550;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.site-main .edu-exp-area .timeline-item h4{
+  font-size:  18px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+
+.site-main .edu-exp-area .timeline-item h4 span{
+  font-weight: 400;
 }
 
 .site-main .services-area{
