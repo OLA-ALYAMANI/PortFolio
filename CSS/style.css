@@ -251,6 +251,22 @@ nav.tag{
   padding: 40px 0;
 }
 
+.site-main .edu-exp-area .timeline-item{
+  position: relative;
+  padding: 10px 0 0 40px;
+}
+
+.site-main .edu-exp-area .timeline-item::before{
+  content: "";
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background-color: var(--third-color);
+  left: 0;
+  top: 16px;
+  border-radius: 50%;
+}
+
 .site-main .edu-exp-area .timeline-item .date{
   display: block;
   color: var(--third-color);
