@@ -11,17 +11,18 @@
   border: 1px solid black;
 } */
 
-.loading_area{
-    /* display: flex;
+.loading_area {
+  /* display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh; */
-    background: whitesmoke url(../img/preloader-backgound.gif) no-repeat center center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
+  background: whitesmoke url(../img/preloader-backgound.gif) no-repeat center
+    center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 /* .circle{
@@ -52,7 +53,6 @@
     }
 } */
 
-
 .logo {
   font-family: "Piedra";
   font-size: 2.3em;
@@ -68,12 +68,12 @@
   padding: 1rem 16rem;
 }
 
-.header_area .main-menu .navbar .collapse{
+.header_area .main-menu .navbar .collapse {
   display: flex;
   justify-content: flex-end;
 }
 
-.header_area .main-menu .navbar-nav li{
+.header_area .main-menu .navbar-nav li {
   width: 9rem;
 }
 
@@ -92,7 +92,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 
 .header_area .main-menu .navbar-nav a:hover {
   background: var(--gradient-color);
@@ -143,7 +142,7 @@ input[type="checkbox"]:checked ~ .check{
   transition: 0.5s;
 } */
 
-nav.tag{
+nav.tag {
   /*position: absolute;*/
   /*left: auto;
   top: 15%;*/
@@ -174,25 +173,31 @@ nav.tag{
   width: 90rem;
 }
 
-.site-main .about-area{
+.site-main .about-area {
   padding: 6rem 0;
 }
 
-.site-main .about-area .about-title h2 > span{
+.site-main .about-area .about-title h2 > span {
   display: block;
-  font:normal bold 49px/60px var(--roboto);
+  font: normal bold 49px/60px var(--roboto);
   letter-spacing: 21px;
 }
 
-.site-main ,.about-area .about-title .paragraph > p{
+.site-main,
+.about-area .about-title .paragraph > p {
   padding: 1.9rem 0;
 }
 
-.site-main .edu-exp-area{
+.site-main .edu-exp-area {
   padding: 2rem 0;
 }
 
-.site-main .edu-exp-area .about-table .tab-item{
+button {
+  font-family: inherit;
+  user-select: none;
+}
+
+.site-main .edu-exp-area .about-table .tab-item {
   padding: 3px 0;
   background-color: transparent;
   text-transform: capitalize;
@@ -204,41 +209,48 @@ nav.tag{
   font-weight: 500;
   margin: 0 30px 0 0;
   position: relative;
+  opacity: 0.5;
   transition: all 0.3s ease;
 }
 
-.site-main .edu-exp-area .about-table .tab-item:last-child{
+.site-main .edu-exp-area .about-table .tab-item:last-child {
   margin: 0;
 }
 
-.site-main .edu-exp-area .about-table .tab-item::before{
+.site-main .edu-exp-area .about-table .tab-item::before {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0%;
+  width: 0;
   height: 1px;
-  background-color: var(--title-color);
+  background-color: var(--text-color);
   transition: width 0.3s ease;
 }
 
-.site-main .edu-exp-area .about-table .tab-item.active{
+.site-main .edu-exp-area .about-table .tab-item:hover::before {
+  width: 100%;
+}
+
+.site-main .edu-exp-area .about-table .tab-item.active::before{
+  width: 100%;
+}
+
+.site-main .edu-exp-area .about-table .tab-item.active {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  opacity: 1;
+  cursor: auto;
 }
 
-.site-main .edu-exp-area .about-table .tab-item:hover:before{
-  width: 100%;
-}
-
-.site-main .edu-exp-area .timeline{
+.site-main .edu-exp-area .timeline {
   position: relative;
 }
 
-.site-main .edu-exp-area .timeline::before{
-  content: '';
+.site-main .edu-exp-area .timeline::before {
+  content: "";
   position: absolute;
   height: 100%;
   width: 1px;
@@ -247,16 +259,21 @@ nav.tag{
   background-color: var(--third-color);
 }
 
-.site-main .edu-exp-area .tab-content{
+.site-main .edu-exp-area .tab-content {
   padding: 40px 0;
+  display: none;
 }
 
-.site-main .edu-exp-area .timeline-item{
+.site-main .edu-exp-area .tab-content.active {
+  display: block;
+}
+
+.site-main .edu-exp-area .timeline-item {
   position: relative;
   padding: 10px 0 0 40px;
 }
 
-.site-main .edu-exp-area .timeline-item::before{
+.site-main .edu-exp-area .timeline-item::before {
   content: "";
   position: absolute;
   height: 11px;
@@ -267,7 +284,7 @@ nav.tag{
   border-radius: 50%;
 }
 
-.site-main .edu-exp-area .timeline-item .date{
+.site-main .edu-exp-area .timeline-item .date {
   display: block;
   color: var(--third-color);
   font-weight: 600;
@@ -275,75 +292,79 @@ nav.tag{
   font-size: 17px;
 }
 
-.site-main .edu-exp-area .timeline-item .city{
+.site-main .edu-exp-area .timeline-item .city {
   display: block;
   font-weight: 550;
   margin: 0 0 10px;
   font-size: 14px;
 }
 
-.site-main .edu-exp-area .timeline-item h4{
-  font-size:  18px;
+.site-main .edu-exp-area .timeline-item h4 {
+  font-size: 18px;
   text-transform: capitalize;
   margin: 0 0 10px;
 }
 
-.site-main .edu-exp-area .timeline-item h4 span{
+.site-main .edu-exp-area .timeline-item h4 span {
   font-weight: 400;
 }
 
-.site-main .services-area{
+.site-main .edu-exp-area .timeline-item p {
+  font-size: 14px;
+}
+
+.site-main .services-area {
   padding: 7rem 2rem;
 }
 
-.site-main .services-area .services-title{
+.site-main .services-area .services-title {
   padding: 0 14rem;
 }
 
-.site-main .services-area .services-title h1{
+.site-main .services-area .services-title h1 {
   font-size: 35px;
 }
 
-.site-main > .services-area .services{
+.site-main > .services-area .services {
   background-color: rgba(248, 252, 253, 0.877);
   padding: 2rem 0;
-  margin: 5rem .5rem;
-  transition: box-shadow .7s ease;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
 }
 
-.site-main > .services-area .services:hover{
+.site-main > .services-area .services:hover {
   box-shadow: var(--box-shadow);
 }
 
 /*Project*/
 
-.site-main .project-area{
+.site-main .project-area {
   padding: 4rem 0;
 }
 
-.site-main .project-area .grid .our-project > .title h4{
+.site-main .project-area .grid .our-project > .title h4 {
   font: normal 700 25px/12px var(--roboto);
 }
 
-.site-main .project-area .grid .our-project .img a:hover img{
+.site-main .project-area .grid .our-project .img a:hover img {
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
 /* Subscribe */
 
-.site-main .subscribe-us-area .subscribe{
+.site-main .subscribe-us-area .subscribe {
   background: url(../img/subscribe-bg.jpg) no-repeat;
   padding: 7rem;
   margin: 2rem auto;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
   font: normal 700 30px/30px var(--roboto);
   color: whitesmoke;
   padding: 2rem 3rem;
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input{
+.site-main .subscribe-us-area .subscribe form .input-textbox input {
   width: 300px;
   padding: 1.5rem 1rem;
   border: 1px solid whitesmoke;
@@ -352,31 +373,36 @@ nav.tag{
   font: normal 500 17px/20px var(--roboto);
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+.site-main
+  .subscribe-us-area
+  .subscribe
+  form
+  .input-textbox
+  input::placeholder {
   color: whitesmoke;
 }
 
-.site-main .subscribe-us-area .subscribe form .btn-submit button{
+.site-main .subscribe-us-area .subscribe form .btn-submit button {
   background: whitesmoke;
-  color:#000;
-  padding: .7rem 2rem;
+  color: #000;
+  padding: 0.7rem 2rem;
 }
 
-.footer-area .flex-wrap .site-logo a{
+.footer-area .flex-wrap .site-logo a {
   text-decoration: none;
 }
 
-.footer-area .flex-wrap .site-logo a > h1{
+.footer-area .flex-wrap .site-logo a > h1 {
   font-family: "Piedra";
   font-size: 2.7em;
   color: rgb(74, 157, 168);
   /* padding: 0 12.5ex 0 0; */
 }
 
-.footer-area .social{
+.footer-area .social {
   padding: 1.8rem;
 }
 
-.footer-area .social a{
+.footer-area .social a {
   color: #000;
 }
