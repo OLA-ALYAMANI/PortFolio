@@ -3,20 +3,8 @@
 @import url(./partials/_variables.css);
 @import url(./partials/_global.css);
 
-/* :root{
-  filter: invert(100%);
-} */
-
-/* *{
-  border: 1px solid black;
-} */
-
+/* Loading */
 .loading_area {
-  /* display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh; */
   background: whitesmoke url(../img/preloader-backgound.gif) no-repeat center
     center;
   height: 100vh;
@@ -25,34 +13,6 @@
   z-index: 100;
 }
 
-/* .circle{
-    display: inline-block;
-    background-color: rgb(23, 65, 129);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: grow 1.5s linear infinite;
-    margin: -10px;
-}
-
-.circle:nth-child(2){
-    background-color: rgb(74, 157, 168);
-    animation-delay: 0.75s;
-}
-
-@keyframes rotate{
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes grow{
-    50%{
-        transform: scale(1);
-    }
-} */
-
 .logo {
   font-family: "Piedra";
   font-size: 2.3em;
@@ -60,6 +20,7 @@
   padding: 0 12.5ex 0 0;
 }
 
+/* NavBar */
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 1rem 0 1rem;
 }
@@ -100,55 +61,11 @@
   background-clip: text;
 }
 
-/* .light-dark{
-  display: flex;
-  align-items: flex-start;
-  justify-content: start;
-  
-}
-
-input[type="checkbox"]{
-  -webkit-appearance: none;
-  visibility: hidden;
-  display: none;
-}
-
-.check{
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 20px;
-  background: #092c3e;
-  cursor: pointer;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: ease-in 0.5s;
-}
-
-input[type="checkbox"]:checked ~ .check{
-  background:  #fff;
-  box-shadow: 0 0 0 1200px #092c3e;
-}
-
-.check::before{
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  background: #fff;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  transition: 0.5s;
-} */
-
+/* SVG 3D */
 nav.tag {
-  /*position: absolute;*/
-  /*left: auto;
-  top: 15%;*/
   padding: 2rem 0 2rem 0;
 }
-
+/* Banner */
 .site-main .site-banner .site-title h3 {
   padding-top: 20%;
   font-weight: 500;
@@ -173,6 +90,7 @@ nav.tag {
   width: 90rem;
 }
 
+/* About */
 .site-main .about-area {
   padding: 6rem 0;
 }
@@ -188,6 +106,7 @@ nav.tag {
   padding: 1.9rem 0;
 }
 
+/* Education & Experience */
 .site-main .edu-exp-area {
   padding: 2rem 0;
 }
@@ -313,6 +232,7 @@ button {
   font-size: 14px;
 }
 
+/* Services */
 .site-main .services-area {
   padding: 7rem 2rem;
 }
@@ -337,7 +257,6 @@ button {
 }
 
 /*Project*/
-
 .site-main .project-area {
   padding: 4rem 0;
 }
@@ -350,27 +269,42 @@ button {
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
 
-/* Subscribe */
-
+/* Contact Me */
 .site-main .contact-me-area .contact {
   background: url(../img/subscribe-bg.jpg) no-repeat;
-  padding: 3rem;
+  padding: 2rem;
   margin: 2rem auto;
 }
+
+.site-main .contact-me-area .contact .contact-form .contact-info{
+  width: 50%;
+  padding: 0 15px;
+}
+
 
 .site-main .contact-me-area .contact .contact-title h4 {
   font: normal 700 30px/30px var(--roboto);
   color: whitesmoke;
-  padding: 2rem 3rem;
+  padding: 1.7rem 3rem;
 }
 
-.site-main .contact-me-area .contact form .input-textbox {
-  width: 100px;
+.site-main .contact-me-area .contact .contact-form .input-textbox {
+  width: 400px;
   padding: 1.5rem 1rem;
-  /* border: 1px solid whitesmoke; */
   background: transparent;
   color: white;
   font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .contact-me-area .contact .contact-form .input-textbox .form-control{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .site-main
@@ -388,6 +322,7 @@ button {
   padding: 0.7rem 2rem;
 }
 
+/* Footer */
 .footer-area .flex-wrap .site-logo a {
   text-decoration: none;
 }
@@ -396,7 +331,6 @@ button {
   font-family: "Piedra";
   font-size: 2.7em;
   color: rgb(74, 157, 168);
-  /* padding: 0 12.5ex 0 0; */
 }
 
 .footer-area .social {
