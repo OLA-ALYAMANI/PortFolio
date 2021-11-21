@@ -65,6 +65,7 @@
 nav.tag {
   padding: 2rem 0 2rem 0;
 }
+
 /* Banner */
 .site-main .site-banner .site-title h3 {
   padding-top: 20%;
@@ -272,7 +273,7 @@ button {
 /* Contact Me */
 .site-main .contact-me-area{
   background: url(../img/smooth-dark-blue-background.jpg) no-repeat;
-  height: 49rem;
+  /* height: 29.5rem; */
   padding: 4.6rem;
 }
 
@@ -287,16 +288,19 @@ button {
 .site-main .contact-me-area .contact .contact-form .contact-info{
   width: 40%;
   padding: 0 15px;
+  text-align: center;
 }
 
 
 .site-main .contact-me-area .contact .contact-title h4 {
   font: normal 700 30px/30px var(--roboto);
-  color: whitesmoke;
   padding: 1.7rem 2rem;
 }
 
-.site-main .contact-me-area .contact .contact-form .input-textbox {
+.site-main .contact-me-area .contact .contact-title h4, .contact-info .contact-info-itme{
+  color: whitesmoke;
+}
+/* .site-main .contact-me-area .contact .contact-form .input-textbox {
   width: 580px;
   padding: 1.3rem 1rem;
   background: transparent;
@@ -317,10 +321,10 @@ button {
 }
 
 .site-main .contact-me-area .contact .contact-form .input-textbox:focus{
-  border-color: var(--border-color);
+  border-color: var(--border-color); 
 }
 
-.site-main .contact-me-area .contact .contact-form .input-textbox textarea.form-control{
+/* .site-main .contact-me-area .contact .contact-form .input-textbox textarea.form-control{
   height: 120px;
   resize: none;
   padding-top: 15px;
@@ -337,10 +341,10 @@ button {
 
 .site-main .contact-me-area .contact form .btn-submit button {
   /*background: whitesmoke;*/
-  border-radius: 14px;
+ /* border-radius: 14px;
   color: #000;
   padding: 0.7rem 2rem;
-}
+} */
 
 /* Footer */
 .footer-area .flex-wrap .site-logo a {
