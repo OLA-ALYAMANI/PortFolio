@@ -1,0 +1,19 @@
+
+
+@media only screen and (max-width: 340px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .contact-me-area .contact .contact-title .contact-form, 
+    .site-main .services-area{
+        padding: 2%;
+        margin: 0%;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main .contact-me-area .contact .contact-form .contact-info{
+        width: 15rem;
+    }
+}
