@@ -13,26 +13,23 @@
   z-index: 100;
 }
 
-.logo {
+.header_area .main-menu .navbar .navbar-brand{
+  margin-left: 4.8rem;
+}
+
+.header_area .main-menu .navbar .navbar-brand .logo {
   font-family: "Piedra";
-  font-size: 2.3em;
+  font-size: 3.5rem;
   color: var(--third-color);
-  padding: 0 12.5ex 0 0;
 }
 
 /* NavBar */
 .header_area .main-menu .navbar{
-  padding: 1rem 20rem ;
+  padding: 1.4rem;
 }
 
-.header_area .main-menu .navbar .navbar-brand h1 {
-  padding: 2rem 5rem;
-  text-align: center;
-}
-
-.header_area .main-menu .navbar .site-title{
-  left: 6rem;
-}
+/* .header_area .main-menu .navbar .site-title{
+} */
 
 /*.header_area .main-menu .navbar .collapse {
   display: flex;
@@ -378,5 +375,12 @@ footer.footer-area{
 
 .footer-area .social a:hover > i{
   color: var(--third-color);
+}
+
+.footer-area hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid var(--title-color);
+  margin: 20px auto;
 }
 
